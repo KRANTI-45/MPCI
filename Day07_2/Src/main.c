@@ -38,13 +38,12 @@ int main(void)
 
 	SystemInit();
 
-	LedInit(LED_GREEN);
 
 	LedInit(LED_BLUE);
 
 	LedInit(LED_RED);
 
-	LedInit(LED_ORANGE);
+
 
 	UartInit(BAUD_9600);
 
@@ -67,25 +66,25 @@ int main(void)
 
            case '1':
 
-        	     LedBlink(LED_GREEN, 1000);
+        	     LedOn(LED_RED);
 
         	     break;
 
            case '2':
 
-        	     LedBlink(LED_BLUE, 1000);
+        	     LedOff(LED_RED);
 
         	     break;
 
            case '3':
 
-        	     LedBlink(LED_RED, 1000);
+        	     LedOn(LED_BLUE);
 
         	     break;
 
            case '4':
 
-        	     LedBlink(LED_ORANGE, 1000);
+        	     LedOff(LED_BLUE);
 
         	     break;
 
