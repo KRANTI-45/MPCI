@@ -56,7 +56,7 @@ int main(void)
 		//strupr(str);
 
 
-		UartPuts("Enter your choice \r\n1.LED blue\r\n2.LED red\r\n3.LED Orange\r\n4.LED Green\r\n");
+		UartPuts("Enter your choice \r\n1.LED RED ON r\n2.LED RED OFF \r\n3.LED BLUE ON \r\n4.LED BLUE OFF\r\n");
 
 		ch = UartGetch();
 
