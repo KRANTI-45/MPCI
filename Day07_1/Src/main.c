@@ -39,6 +39,7 @@ int main(void)
 
 	int c = 0;
 	SystemInit();
+	SwitchInit(SWITCH);
 	UartInit(BAUD_9600);
 	//UartPuts("Enter Strings...\r\n");
 	while(1) {
@@ -46,7 +47,7 @@ int main(void)
 		//strupr(str);
 		if(count_flag == 1)
 		{
-			sprintf(str,"%d\n",c++);
+			sprintf(str,"%d\n\r",c++);
 			UartPuts(str);
 			count_flag = 0;
 		}
