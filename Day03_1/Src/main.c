@@ -14,6 +14,7 @@
  * If no LICENSE file comes with this software, it is provided AS-IS.
  *
  ******************************************************************************
+ Blink LEDs in clockwise and anti-clockwise continuously.
  */
 
 #include <stdint.h>
